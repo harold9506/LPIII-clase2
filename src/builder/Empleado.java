@@ -10,7 +10,7 @@ public class Empleado {
         this.id = id;
     }
 
-    public static EmpleadoBuilder builder(){
+    public static EmpleadoBuilder builder() {
         return new EmpleadoBuilder();
     }
 
@@ -24,21 +24,21 @@ public class Empleado {
 
     public static class EmpleadoBuilder {
 
-            private String nombre;
-            private long id;
+        private String nombre;
+        private long id;
 
-            public EmpleadoBuilder nombre ( String nombre) {
-                this.nombre=nombre;
-                return this;
-            }
-            public EmpleadoBuilder id(long id) {
-                this.id = id;
-                return this;
-            }
+        public EmpleadoBuilder nombre(String nombre) {
+            this.nombre = nombre;
+            return this;
+        }
 
-            public Empleado build() {
-                return new Empleado(nombre, id);
-            }
+        public EmpleadoBuilder id(long id) {
+            this.id = id;
+            return this;
+        }
+
+        public Empleado build() {
+            return new Empleado(nombre, id);
+        }
     }
-
 }
