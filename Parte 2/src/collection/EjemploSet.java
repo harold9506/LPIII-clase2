@@ -1,8 +1,5 @@
-package Collection;
+package collection;
 
-import com.sun.source.tree.Tree;
-
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
